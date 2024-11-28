@@ -16,7 +16,7 @@ const LoginPage = () => {
     setLoading(true);
     try {
       await login({ username, password });
-      navigate('/');
+      navigate('/home-page');
     } catch (error) {
       console.error(error);
     } finally {
