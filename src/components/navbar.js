@@ -4,6 +4,7 @@ import { useAuth } from '../hooks/useAuth';
 const Navbar = () => {
   const { user, logout } = useAuth();
   const { pharmacy } = user;
+  console.log(user)
 
   return (
     <nav className="fixed top-0 w-full bg-gray-800 shadow-lg z-50">
@@ -11,8 +12,10 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Nom de la pharmacie */}
           <div className="text-white font-semibold text-xl">
-            {pharmacy?.name || 'Nom de la pharmacie'}
+            {pharmacy?.id || 'Nom de la pharmacie'}
+            
           </div>
+          
 
           {/* Bouton de déconnexion */}
           <button

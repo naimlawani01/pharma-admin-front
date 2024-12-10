@@ -9,7 +9,7 @@ export const login = async (credentials) => {
             },
         });
         console.log(response.data);
-        if (response.data.role !== "pharmacy_adsmin" && response.data.role !==  "pharmacy_employee") {
+        if (response.data.role !== "pharmacy_admin" && response.data.role !==  "pharmacy_employee") {
           throw new AuthorizationError("Accès refusé : l'utilisateur n'a pas la permission.");
         }
     

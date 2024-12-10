@@ -9,7 +9,7 @@ const SidebarUserPanel = () => {
     return null; // Ou afficher un message indiquant que l'utilisateur n'est pas connecté
   }
 
-  const { username, avatar, roles } = user;
+  const { username, avatar, role } = user;
 
   return (
     <div className="flex flex-col items-center p-8 bg-gray-800 text-white">
@@ -18,8 +18,8 @@ const SidebarUserPanel = () => {
         alt="Nom de l'utilisateur"
         src={avatar || "https://avatar.iran.liara.run/public"} // Image par défaut
       />
-      <h3 className="text-lg font-semibold">{username}</h3>
-      <p className="text-sm text-gray-400">Rôle : {roles}</p>
+      <h3 className="text-lg font-semibold">user{username}</h3>
+      <p className="text-sm text-gray-400">Rôle : {role}</p>
     </div>
   );
 };
