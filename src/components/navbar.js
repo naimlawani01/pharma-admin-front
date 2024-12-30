@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Nom de la pharmacie */}
           <div className="text-white font-semibold text-xl">
-            {pharmacy?.id || 'Nom de la pharmacie'}
+            {pharmacy?.name || 'Nom de la pharmacie'}
             
           </div>
           

@@ -31,7 +31,7 @@ const SideMenu = () => {
         {openProducts && (
           <div className="ml-4 mt-2">
             <button
-              onClick={() => handleNavigation("/pharmacy/list-product")}
+              onClick={() => handleNavigation("/list-product")}
               className="block w-full text-left p-2 rounded-lg hover:bg-gray-700"
             >
               Liste des produits
